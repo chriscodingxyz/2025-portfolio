@@ -19,7 +19,7 @@ export default function Home () {
       style={{ backgroundImage: 'url(/images/bg-01.webp)' }}
     >
       <div className='min-h-[calc(100dvh-30px)] bg-black/50 backdrop-blur-sm'>
-        <div className='max-w-2xl mx-auto px-6 py-16 space-y-8 font-jetbrains-mono'>
+        <div className='max-w-2xl mx-auto px-6 py-16 space-y-8 font-inter'>
           {/* Header */}
           <header className='flex items-center justify-between'>
             <div className='flex items-center gap-4'>
