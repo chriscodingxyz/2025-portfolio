@@ -42,13 +42,13 @@ export default function Home () {
                 rel='noopener noreferrer'
                 className='text-white/70 hover:text-white transition-colors'
               >
-                <Github className='w-5 h-5' />
+                <Github className='w-4 h-4' />
               </a>
               <a
                 href='mailto:chris@example.com'
                 className='text-white/70 hover:text-white transition-colors'
               >
-                <Mail className='w-5 h-5' />
+                <Mail className='w-4 h-4' />
               </a>
               <a
                 href='https://linkedin.com/in/chriswiz'
@@ -56,7 +56,7 @@ export default function Home () {
                 rel='noopener noreferrer'
                 className='text-white/70 hover:text-white transition-colors'
               >
-                <Linkedin className='w-5 h-5' />
+                <Linkedin className='w-4 h-4' />
               </a>
             </div>
           </header>
