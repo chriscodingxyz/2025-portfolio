@@ -22,10 +22,10 @@ import avatar from '@/public/images/avatar.png'
 
 export default function Home () {
   return (
-    <div className='min-h-[calc(100dvh-30px)] p-3'>
+    <div className='min-h-[calc(100dvh-30px)] p-3 bg-background'>
       <div className='max-w-4xl mx-auto space-y-4'>
         {/* Header */}
-        <header className='flex items-center justify-between py-3 border-b'>
+        <header className='flex items-center justify-between py-3'>
           <div className='flex items-center gap-2'>
             <Image
               src={avatar}
@@ -73,7 +73,7 @@ export default function Home () {
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-            <Card className='rounded-none p-2.5 hover:shadow-sm transition-shadow'>
+            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>Fullstack Developer</h3>
@@ -86,9 +86,9 @@ export default function Home () {
                   <Calendar className='w-3 h-3 text-red-500' />
                 </div>
               </div>
-            </Card>
+            </div>
 
-            <Card className='rounded-none p-2.5 hover:shadow-sm transition-shadow'>
+            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>Freelance Developer</h3>
@@ -101,9 +101,9 @@ export default function Home () {
                   <Calendar className='w-3 h-3 text-red-500' />
                 </div>
               </div>
-            </Card>
+            </div>
 
-            <Card className='rounded-none p-2.5 hover:shadow-sm transition-shadow'>
+            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>Junior Developer</h3>
@@ -116,9 +116,9 @@ export default function Home () {
                   <Calendar className='w-3 h-3 text-red-500' />
                 </div>
               </div>
-            </Card>
+            </div>
 
-            <Card className='rounded-none p-2.5 hover:shadow-sm transition-shadow'>
+            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>IT Consultant</h3>
@@ -131,7 +131,7 @@ export default function Home () {
                   <Calendar className='w-3 h-3 text-red-500' />
                 </div>
               </div>
-            </Card>
+            </div>
           </div>
         </section>
 
@@ -143,7 +143,7 @@ export default function Home () {
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-            <Card className='rounded-none p-2.5 hover:shadow-sm transition-shadow'>
+            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>Portfolio Website</h3>
                 <a
@@ -167,9 +167,9 @@ export default function Home () {
                   Tailwind
                 </span>
               </div>
-            </Card>
+            </div>
 
-            <Card className='rounded-none p-2.5 hover:shadow-sm transition-shadow'>
+            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>E-commerce Platform</h3>
                 <a
@@ -193,7 +193,7 @@ export default function Home () {
                   PostgreSQL
                 </span>
               </div>
-            </Card>
+            </div>
           </div>
         </section>
       </div>
