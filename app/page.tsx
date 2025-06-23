@@ -9,7 +9,8 @@ import {
   Briefcase,
   Folder,
   Calendar,
-  Code
+  Code,
+  User
 } from 'lucide-react'
 import avatar from '@/public/images/avatar.png'
 
@@ -65,64 +66,64 @@ export default function Home () {
             Experience
           </h2>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='flex justify-between items-start'>
-                <div>
-                  <h3 className='text-xs font-medium'>Fullstack Developer</h3>
-                  <p className='text-xs text-muted-foreground'>
-                    27.works • Remote, UK
-                  </p>
-                </div>
-                <div className='flex items-center gap-1'>
-                  <span className='text-xs text-muted-foreground'>2024</span>
-                  <Calendar className='w-3 h-3 text-red-500' />
-                </div>
+          <div className='grid grid-cols-2 gap-2'>
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+              <div className='absolute top-2 right-2 flex items-center gap-1'>
+                <span className='text-xs text-muted-foreground'>2024+</span>
+                <Calendar className='w-3 h-3 text-red-500' />
+              </div>
+              <div className='space-y-0.5 pr-12'>
+                <h3 className='text-xs font-medium'>Fullstack Developer</h3>
+                <p className='text-xs text-muted-foreground'>
+                  <span className='block md:inline'>27.works</span>
+                  <span className='hidden md:inline'> • </span>
+                  <span className='block md:inline'>Remote, UK</span>
+                </p>
               </div>
             </div>
 
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='flex justify-between items-start'>
-                <div>
-                  <h3 className='text-xs font-medium'>Freelance Developer</h3>
-                  <p className='text-xs text-muted-foreground'>
-                    LittleCraftsLondon • Remote, UK
-                  </p>
-                </div>
-                <div className='flex items-center gap-1'>
-                  <span className='text-xs text-muted-foreground'>2023-24</span>
-                  <Calendar className='w-3 h-3 text-red-500' />
-                </div>
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+              <div className='absolute top-2 right-2 flex items-center gap-1'>
+                <span className='text-xs text-muted-foreground'>2023-24</span>
+                <Calendar className='w-3 h-3 text-red-500' />
+              </div>
+              <div className='space-y-0.5 pr-12'>
+                <h3 className='text-xs font-medium'>Freelance Developer</h3>
+                <p className='text-xs text-muted-foreground'>
+                  <span className='block md:inline'>LittleCraftsLondon</span>
+                  <span className='hidden md:inline'> • </span>
+                  <span className='block md:inline'>Remote, UK</span>
+                </p>
               </div>
             </div>
 
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='flex justify-between items-start'>
-                <div>
-                  <h3 className='text-xs font-medium'>Junior Developer</h3>
-                  <p className='text-xs text-muted-foreground'>
-                    NorthCoders • Remote, UK
-                  </p>
-                </div>
-                <div className='flex items-center gap-1'>
-                  <span className='text-xs text-muted-foreground'>2023</span>
-                  <Calendar className='w-3 h-3 text-red-500' />
-                </div>
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+              <div className='absolute top-2 right-2 flex items-center gap-1'>
+                <span className='text-xs text-muted-foreground'>2023</span>
+                <Calendar className='w-3 h-3 text-red-500' />
+              </div>
+              <div className='space-y-0.5 pr-12'>
+                <h3 className='text-xs font-medium'>Junior Developer</h3>
+                <p className='text-xs text-muted-foreground'>
+                  <span className='block md:inline'>NorthCoders</span>
+                  <span className='hidden md:inline'> • </span>
+                  <span className='block md:inline'>Remote, UK</span>
+                </p>
               </div>
             </div>
 
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='flex justify-between items-start'>
-                <div>
-                  <h3 className='text-xs font-medium'>IT Consultant</h3>
-                  <p className='text-xs text-muted-foreground'>
-                    MacSeven • London, UK
-                  </p>
-                </div>
-                <div className='flex items-center gap-1'>
-                  <span className='text-xs text-muted-foreground'>2018-22</span>
-                  <Calendar className='w-3 h-3 text-red-500' />
-                </div>
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+              <div className='absolute top-2 right-2 flex items-center gap-1'>
+                <span className='text-xs text-muted-foreground'>2018-22</span>
+                <Calendar className='w-3 h-3 text-red-500' />
+              </div>
+              <div className='space-y-0.5 pr-12'>
+                <h3 className='text-xs font-medium'>IT Consultant</h3>
+                <p className='text-xs text-muted-foreground'>
+                  <span className='block md:inline'>MacSeven</span>
+                  <span className='hidden md:inline'> • </span>
+                  <span className='block md:inline'>London, UK</span>
+                </p>
               </div>
             </div>
           </div>
@@ -298,16 +299,18 @@ export default function Home () {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
             <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex items-start justify-between mb-1.5'>
-                <h3 className='text-xs font-medium'>Portfolio Website</h3>
+                <h3 className='text-xs font-medium'>Coffee Dial</h3>
                 <a
-                  href='#'
+                  href='https://coffeedial.vercel.app/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-muted-foreground hover:text-foreground'
                 >
                   <ExternalLink className='w-3 h-3' />
                 </a>
               </div>
               <p className='text-xs text-muted-foreground mb-1.5'>
-                Personal portfolio with Next.js and shadcn/ui
+                Coffee brewing calculator and timer application
               </p>
               <div className='flex gap-1 flex-wrap'>
                 <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
@@ -324,27 +327,122 @@ export default function Home () {
 
             <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex items-start justify-between mb-1.5'>
-                <h3 className='text-xs font-medium'>E-commerce Platform</h3>
+                <h3 className='text-xs font-medium'>Layout Lab</h3>
                 <a
-                  href='#'
+                  href='https://layoutlab.vercel.app/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-muted-foreground hover:text-foreground'
                 >
                   <ExternalLink className='w-3 h-3' />
                 </a>
               </div>
               <p className='text-xs text-muted-foreground mb-1.5'>
-                Full-stack solution with payments and admin
+                CSS layout playground and learning tool
               </p>
               <div className='flex gap-1 flex-wrap'>
                 <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                   React
                 </span>
                 <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
-                  Node.js
+                  CSS
                 </span>
                 <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
-                  PostgreSQL
+                  Tailwind
                 </span>
+              </div>
+            </div>
+
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+              <div className='flex items-start justify-between mb-1.5'>
+                <h3 className='text-xs font-medium'>Template NextShad</h3>
+                <a
+                  href='https://template-nextshad.vercel.app/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-muted-foreground hover:text-foreground'
+                >
+                  <ExternalLink className='w-3 h-3' />
+                </a>
+              </div>
+              <p className='text-xs text-muted-foreground mb-1.5'>
+                Next.js starter template with shadcn/ui components
+              </p>
+              <div className='flex gap-1 flex-wrap'>
+                <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
+                  Next.js
+                </span>
+                <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
+                  shadcn/ui
+                </span>
+                <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
+                  TypeScript
+                </span>
+              </div>
+            </div>
+
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+              <div className='flex items-start justify-between mb-1.5'>
+                <h3 className='text-xs font-medium'>Cherry Portfolio</h3>
+                <a
+                  href='https://cherrydub98.vercel.app/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-muted-foreground hover:text-foreground'
+                >
+                  <ExternalLink className='w-3 h-3' />
+                </a>
+              </div>
+              <p className='text-xs text-muted-foreground mb-1.5'>
+                Personal portfolio showcasing projects and skills
+              </p>
+              <div className='flex gap-1 flex-wrap'>
+                <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
+                  Next.js
+                </span>
+                <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
+                  React
+                </span>
+                <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
+                  Tailwind
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className='space-y-2'>
+          <h2 className='text-xs font-medium flex items-center gap-1.5 text-orange-600 uppercase tracking-wide'>
+            <User className='w-3.5 h-3.5' />
+            Contact
+          </h2>
+
+          <div className='p-2.5 border border-border/30'>
+            <div className='flex items-center justify-between'>
+              <div>
+                <p className='text-xs font-medium'>
+                  Available for new opportunities
+                </p>
+                <p className='text-xs text-muted-foreground'>
+                  Get in touch via email or LinkedIn
+                </p>
+              </div>
+              <div className='flex gap-2'>
+                <a
+                  href='mailto:chris@example.com'
+                  className='text-muted-foreground hover:text-foreground transition-colors'
+                >
+                  <Mail className='w-4 h-4' />
+                </a>
+                <a
+                  href='https://linkedin.com/in/chriswiz'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-muted-foreground hover:text-foreground transition-colors'
+                >
+                  <Linkedin className='w-4 h-4' />
+                </a>
               </div>
             </div>
           </div>

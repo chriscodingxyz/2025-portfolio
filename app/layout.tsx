@@ -1,5 +1,13 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Silkscreen, Inter, JetBrains_Mono, Poppins, Space_Grotesk } from 'next/font/google'
+import {
+  Geist,
+  Geist_Mono,
+  Silkscreen,
+  Inter,
+  JetBrains_Mono,
+  Poppins,
+  Space_Grotesk
+} from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/layout/Footer'
 import { ThemeProvider } from 'next-themes'
@@ -18,7 +26,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Your Name',
+  title: 'Chris Wiz | Portfolio',
   description: 'Personal portfolio showcasing my work, experience, and projects'
 }
 
