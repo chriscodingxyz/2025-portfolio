@@ -67,12 +67,14 @@ export default function Home () {
           </h2>
 
           <div className='grid grid-cols-2 gap-2'>
-            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='absolute top-2 right-2 flex items-center gap-1'>
-                <span className='text-xs text-muted-foreground'>2024+</span>
-                <Calendar className='w-3 h-3 text-red-500' />
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
+              <div className='absolute top-2 right-2'>
+                <div className='flex items-center gap-0.5 bg-green-100 text-green-700 px-1.5 py-0.5 rounded border border-green-200 hover:bg-green-200 transition-colors'>
+                  <Calendar color='green' className='w-2.5 h-2.5' />
+                  <span className='text-[10px] font-medium'>2024+</span>
+                </div>
               </div>
-              <div className='space-y-0.5 pr-12'>
+              <div className='space-y-0.5 pr-10'>
                 <h3 className='text-xs font-medium'>Fullstack Developer</h3>
                 <p className='text-xs text-muted-foreground'>
                   <span className='block md:inline'>27.works</span>
@@ -82,12 +84,14 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='absolute top-2 right-2 flex items-center gap-1'>
-                <span className='text-xs text-muted-foreground'>2023-24</span>
-                <Calendar className='w-3 h-3 text-red-500' />
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
+              <div className='absolute top-2 right-2'>
+                <div className='flex items-center gap-0.5 bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 hover:bg-gray-200 transition-colors'>
+                  <Calendar color='red' className='w-2.5 h-2.5' />
+                  <span className='text-[10px] font-medium'>2023-24</span>
+                </div>
               </div>
-              <div className='space-y-0.5 pr-12'>
+              <div className='space-y-0.5 pr-10'>
                 <h3 className='text-xs font-medium'>Freelance Developer</h3>
                 <p className='text-xs text-muted-foreground'>
                   <span className='block md:inline'>LittleCraftsLondon</span>
@@ -97,12 +101,14 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='absolute top-2 right-2 flex items-center gap-1'>
-                <span className='text-xs text-muted-foreground'>2023</span>
-                <Calendar className='w-3 h-3 text-red-500' />
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
+              <div className='absolute top-2 right-2'>
+                <div className='flex items-center gap-0.5 bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 hover:bg-gray-200 transition-colors'>
+                  <Calendar color='red' className='w-2.5 h-2.5' />
+                  <span className='text-[10px] font-medium'>2023</span>
+                </div>
               </div>
-              <div className='space-y-0.5 pr-12'>
+              <div className='space-y-0.5 pr-10'>
                 <h3 className='text-xs font-medium'>Junior Developer</h3>
                 <p className='text-xs text-muted-foreground'>
                   <span className='block md:inline'>NorthCoders</span>
@@ -112,12 +118,14 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
-              <div className='absolute top-2 right-2 flex items-center gap-1'>
-                <span className='text-xs text-muted-foreground'>2018-22</span>
-                <Calendar className='w-3 h-3 text-red-500' />
+            <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
+              <div className='absolute top-2 right-2'>
+                <div className='flex items-center gap-0.5 bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 hover:bg-gray-200 transition-colors'>
+                  <Calendar color='red' className='w-2.5 h-2.5' />
+                  <span className='text-[10px] font-medium'>2018-22</span>
+                </div>
               </div>
-              <div className='space-y-0.5 pr-12'>
+              <div className='space-y-0.5 pr-10'>
                 <h3 className='text-xs font-medium'>IT Consultant</h3>
                 <p className='text-xs text-muted-foreground'>
                   <span className='block md:inline'>MacSeven</span>
@@ -137,7 +145,7 @@ export default function Home () {
           </h2>
 
           <div className='p-2.5 border border-border/30'>
-            <div className='flex gap-1.5 flex-wrap'>
+            <div className='flex gap-0 flex-wrap opacity-100'>
               <img
                 src='https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black'
                 alt='JavaScript'
@@ -421,9 +429,15 @@ export default function Home () {
           <div className='p-2.5 border border-border/30'>
             <div className='flex items-center justify-between'>
               <div>
-                <p className='text-xs font-medium'>
-                  Available for new opportunities
-                </p>
+                <div className='flex items-center gap-2 mb-1'>
+                  <p className='text-xs font-medium'>
+                    Available for new opportunities
+                  </p>
+                  <div className='flex items-center gap-1 bg-green-100 text-green-700 px-2 py-0.5 rounded-md text-xs font-medium border border-green-200'>
+                    <div className='w-2 h-2 bg-green-500 rounded-full'></div>
+                    <span>Open</span>
+                  </div>
+                </div>
                 <p className='text-xs text-muted-foreground'>
                   Get in touch via email or LinkedIn
                 </p>
