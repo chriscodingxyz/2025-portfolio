@@ -10,14 +10,6 @@ import {
   Folder,
   Calendar
 } from 'lucide-react'
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardAction
-} from '@/components/ui/card'
 import avatar from '@/public/images/avatar.png'
 
 export default function Home () {
@@ -67,13 +59,13 @@ export default function Home () {
 
         {/* Experience */}
         <section className='space-y-2'>
-          <h2 className='text-xs font-medium flex items-center gap-1.5 text-muted-foreground uppercase tracking-wide'>
+          <h2 className='text-xs font-medium flex items-center gap-1.5 text-blue-600 uppercase tracking-wide'>
             <Briefcase className='w-3.5 h-3.5' />
             Experience
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>Fullstack Developer</h3>
@@ -88,7 +80,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>Freelance Developer</h3>
@@ -103,7 +95,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>Junior Developer</h3>
@@ -118,7 +110,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex justify-between items-start'>
                 <div>
                   <h3 className='text-xs font-medium'>IT Consultant</h3>
@@ -137,13 +129,13 @@ export default function Home () {
 
         {/* Projects */}
         <section className='space-y-2'>
-          <h2 className='text-xs font-medium flex items-center gap-1.5 text-muted-foreground uppercase tracking-wide'>
+          <h2 className='text-xs font-medium flex items-center gap-1.5 text-purple-600 uppercase tracking-wide'>
             <Folder className='w-3.5 h-3.5' />
             Projects
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>Portfolio Website</h3>
                 <a
@@ -169,7 +161,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='rounded-none p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>E-commerce Platform</h3>
                 <a
