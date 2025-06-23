@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {
   Github,
   Mail,
-  Linkedin,
+  LinkedinIcon,
   ExternalLink,
   Briefcase,
   Folder,
@@ -54,7 +54,7 @@ export default function Home () {
               target='_blank'
               className='text-muted-foreground hover:text-foreground transition-colors'
             >
-              <Linkedin className='w-3.5 h-3.5' />
+              <LinkedinIcon className='w-3.5 h-3.5' />
             </a>
           </div>
         </header>
@@ -305,7 +305,7 @@ export default function Home () {
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>Coffee Dial</h3>
                 <a
@@ -333,7 +333,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>Layout Lab</h3>
                 <a
@@ -361,7 +361,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>Template NextShad</h3>
                 <a
@@ -389,7 +389,7 @@ export default function Home () {
               </div>
             </div>
 
-            <div className='p-2.5 border border-border/30 hover:bg-muted/20 transition-colors'>
+            <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
               <div className='flex items-start justify-between mb-1.5'>
                 <h3 className='text-xs font-medium'>Cherry Portfolio</h3>
                 <a
@@ -431,11 +431,11 @@ export default function Home () {
               <div>
                 <div className='flex items-center gap-2 mb-1'>
                   <p className='text-xs font-medium'>
-                    Available for new opportunities
+                    Available for freelance opportunities
                   </p>
-                  <div className='flex items-center gap-1 bg-green-100 text-green-700 px-2 py-0.5 rounded-md text-xs font-medium border border-green-200'>
+                  <div className='flex items-center gap-0.5 bg-green-100 text-green-700 px-1.5 py-0.5 rounded border border-green-200 hover:bg-green-200 transition-colors'>
                     <div className='w-2 h-2 bg-green-500 rounded-full'></div>
-                    <span>Open</span>
+                    <span className='text-[10px] font-medium'>Open</span>
                   </div>
                 </div>
                 <p className='text-xs text-muted-foreground'>
@@ -455,7 +455,7 @@ export default function Home () {
                   rel='noopener noreferrer'
                   className='text-muted-foreground hover:text-foreground transition-colors'
                 >
-                  <Linkedin className='w-4 h-4' />
+                  <LinkedinIcon className='w-4 h-4' />
                 </a>
               </div>
             </div>
