@@ -80,7 +80,7 @@ export default function Home () {
               Skills
             </AccordionTrigger>
             <AccordionContent className='pb-1'>
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-2 pt-2'>
+              <div className='grid grid-cols-2 md:grid-cols-3 gap-2 pt-2'>
                 {/* Frontend */}
                 <div className='p-2.5 border border-border/30'>
                   <div className='flex items-center gap-1.5 mb-2'>
@@ -219,7 +219,7 @@ export default function Home () {
                 </div>
 
                 {/* Tools */}
-                <div className='p-2.5 border border-border/30'>
+                <div className='col-span-2 md:col-span-1 p-2.5 border border-border/30'>
                   <div className='flex items-center gap-1.5 mb-2'>
                     <Package className='w-3 h-3 text-muted-foreground' />
                     <span className='text-xs text-muted-foreground'>Tools</span>
