@@ -13,7 +13,8 @@ import {
   User,
   Monitor,
   Server,
-  Package
+  Package,
+  FileText
 } from 'lucide-react'
 import {
   Accordion,
@@ -26,7 +27,7 @@ import avatar from '@/public/images/avatar.png'
 export default function Home () {
   return (
     <div className='min-h-[calc(100dvh-30px)] p-3 bg-background'>
-      <div className='max-w-4xl mx-auto space-y-4'>
+      <div className='max-w-2xl mx-auto space-y-4'>
         {/* Header */}
         <header className='flex items-center justify-between py-3'>
           <div className='flex items-center gap-2'>
@@ -40,7 +41,7 @@ export default function Home () {
             <div>
               <h1 className='text-base font-semibold'>Chris Wiz</h1>
               <p className='text-xs text-muted-foreground'>
-                FullStack Developer @ 27.works
+                FullStack Developer
               </p>
             </div>
           </div>
@@ -70,9 +71,33 @@ export default function Home () {
 
         <Accordion
           type='multiple'
-          defaultValue={['skills', 'projects', 'experience', 'contact']}
+          defaultValue={[
+            'about',
+            'skills',
+            'projects',
+            'experience',
+            'contact'
+          ]}
           className='space-y-1'
         >
+          {/* About */}
+          <AccordionItem value='about' className='border-b-0'>
+            <AccordionTrigger className='text-xs font-medium text-gray-600 uppercase tracking-wide justify-start gap-1.5 hover:no-underline py-2'>
+              <FileText className='w-3.5 h-3.5' />
+              About
+            </AccordionTrigger>
+            <AccordionContent className='pb-1'>
+              <div className='p-2.5 border border-border/30 mt-2'>
+                <p className='text-xs text-muted-foreground leading-relaxed'>
+                  I like coding, decentralized assets, memes, and music. I build
+                  web apps with TypeScript, React/Next.js, and SQL databases
+                  (Supabase) or Convex. Looking for clean projects with modern
+                  stacks. Not interested in legacy code or technical debt.
+                </p>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
           {/* Skills */}
           <AccordionItem value='skills' className='border-b-0'>
             <AccordionTrigger className='text-xs font-medium text-green-600 uppercase tracking-wide justify-start gap-1.5 hover:no-underline py-2'>
@@ -85,7 +110,9 @@ export default function Home () {
                 <div className='p-2.5 border border-border/30'>
                   <div className='flex items-center gap-1.5 mb-2'>
                     <Monitor className='w-3 h-3 text-muted-foreground' />
-                    <span className='text-xs text-muted-foreground'>Frontend</span>
+                    <span className='text-xs text-muted-foreground'>
+                      Frontend
+                    </span>
                   </div>
                   <div className='flex gap-0 flex-wrap'>
                     <img
@@ -145,7 +172,9 @@ export default function Home () {
                 <div className='p-2.5 border border-border/30'>
                   <div className='flex items-center gap-1.5 mb-2'>
                     <Server className='w-3 h-3 text-muted-foreground' />
-                    <span className='text-xs text-muted-foreground'>Backend</span>
+                    <span className='text-xs text-muted-foreground'>
+                      Backend
+                    </span>
                   </div>
                   <div className='flex gap-0 flex-wrap'>
                     <img
@@ -284,7 +313,7 @@ export default function Home () {
                   <p className='text-xs text-muted-foreground mb-1.5'>
                     Coffee brewing calculator and timer application
                   </p>
-                  <div className='flex gap-1 flex-wrap'>
+                  {/* <div className='flex gap-1 flex-wrap'>
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       Next.js
                     </span>
@@ -294,7 +323,7 @@ export default function Home () {
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       Tailwind
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
@@ -312,7 +341,7 @@ export default function Home () {
                   <p className='text-xs text-muted-foreground mb-1.5'>
                     CSS layout playground and learning tool
                   </p>
-                  <div className='flex gap-1 flex-wrap'>
+                  {/* <div className='flex gap-1 flex-wrap'>
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       React
                     </span>
@@ -322,7 +351,7 @@ export default function Home () {
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       Tailwind
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
@@ -340,7 +369,7 @@ export default function Home () {
                   <p className='text-xs text-muted-foreground mb-1.5'>
                     Next.js starter template with shadcn/ui components
                   </p>
-                  <div className='flex gap-1 flex-wrap'>
+                  {/* <div className='flex gap-1 flex-wrap'>
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       Next.js
                     </span>
@@ -350,7 +379,7 @@ export default function Home () {
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       TypeScript
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className='p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
@@ -368,7 +397,7 @@ export default function Home () {
                   <p className='text-xs text-muted-foreground mb-1.5'>
                     Personal portfolio showcasing projects and skills
                   </p>
-                  <div className='flex gap-1 flex-wrap'>
+                  {/* <div className='flex gap-1 flex-wrap'>
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       Next.js
                     </span>
@@ -378,7 +407,7 @@ export default function Home () {
                     <span className='text-xs bg-secondary px-1.5 py-0.5 rounded-sm'>
                       Tailwind
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </AccordionContent>
@@ -394,8 +423,8 @@ export default function Home () {
               <div className='grid grid-cols-2 gap-2 pt-2'>
                 <div className='relative p-2.5 border border-border/30 hover:bg-muted/20 hover:scale-[1.02] transition-all duration-200'>
                   <div className='absolute top-2 right-2'>
-                    <div className='flex items-center gap-0.5 bg-green-100 text-green-700 px-1.5 py-0.5 rounded border border-green-200 hover:bg-green-200 transition-colors'>
-                      <Calendar color='green' className='w-2.5 h-2.5' />
+                    <div className='flex items-center gap-0.5 bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded border border-gray-200 hover:bg-gray-200 transition-colors'>
+                      <Calendar color='red' className='w-2.5 h-2.5' />
                       <span className='text-[10px] font-medium'>2024+</span>
                     </div>
                   </div>
