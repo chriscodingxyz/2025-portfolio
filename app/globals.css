@@ -3,13 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
-html {
+/* html {
   filter: grayscale(100%);
 }
 
 html:hover {
   filter: grayscale(0%);
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
