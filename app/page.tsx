@@ -23,6 +23,7 @@ import {
   AccordionContent
 } from '@/components/ui/accordion'
 import avatar from '@/public/images/avatar.png'
+import { ThemeToggle } from '@/components/theme/ThemeToggle'
 
 export default function Home () {
   return (
@@ -45,28 +46,9 @@ export default function Home () {
               </p>
             </div>
           </div>
-          {/* <div className='flex gap-1.5'>
-            <a
-              href='https://github.com/chriswiz'
-              target='_blank'
-              className='text-muted-foreground hover:text-foreground transition-colors'
-            >
-              <Github className='w-3.5 h-3.5' />
-            </a>
-            <a
-              href='mailto:chris@example.com'
-              className='text-muted-foreground hover:text-foreground transition-colors'
-            >
-              <Mail className='w-3.5 h-3.5' />
-            </a>
-            <a
-              href='https://linkedin.com/in/chriswiz'
-              target='_blank'
-              className='text-muted-foreground hover:text-foreground transition-colors'
-            >
-              <LinkedinIcon className='w-3.5 h-3.5' />
-            </a>
-          </div> */}
+          <div className='flex gap-1.5'>
+            <ThemeToggle />
+          </div>
         </header>
 
         <Accordion

@@ -19,7 +19,7 @@ export function ThemeToggle () {
   }
 
   return (
-    <div className='flex items-center border border-border'>
+    <div className='flex items-center border border-border/30'>
       <button
         className={`p-1 transition-colors ${
           theme === 'system' || !theme ? 'bg-secondary' : 'hover:bg-accent'

@@ -76,7 +76,7 @@ export default function RootLayout ({
           <SonnerWrapper>
             <NavProgress>
               <main className='flex-1'>{children}</main>
-              <Footer />
+              {/* <Footer /> */}
               {process.env.NODE_ENV === 'development' && <ViewportIndicator />}
             </NavProgress>
           </SonnerWrapper>
